@@ -2,7 +2,6 @@
 <head>
     <title>Number Guessing Game</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body bgcolor="#F49AB4">
     <h1><u>NUMBER GUSSING GAME</u></h1>
@@ -13,6 +12,10 @@
         <h2 align="center">Guess the number between 1 - 100</h2>
         <div class="triangle-down1"></div>
         <p class="content1"><b>Enter the number:<input type="number" class="input" id="a" name="a"></b></p>
-        <button class="but" onclick="check(a)">Check</button>
+        <button class="but" onclick="check(document.getElementById('a').value)">Check</button>
     </div>
+    <div class="attempts">
+        <h1>No.of.Attempts Remaining:<p id="clicks">10</p></h1>
+    </div>
+    <script src="script.js"></script>
 </body>
